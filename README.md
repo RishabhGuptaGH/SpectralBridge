@@ -1,17 +1,18 @@
 # SpectralBridge — Cross-Platform Algorithmic Recommender
 
-<!-- Replace <your-username> with your GitHub username everywhere below, and set LIVE_URL after deploying. -->
+[![Live demo](https://img.shields.io/badge/LIVE_DEMO-spectralbridge.onrender.com-22c55e?style=flat-square)](https://spectralbridge.onrender.com)
 [![CI](https://github.com/<your-username>/spectralbridge/actions/workflows/ci.yml/badge.svg)](https://github.com/<your-username>/spectralbridge/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-22c55e.svg)](./LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-backend-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)](https://react.dev/)
-[![Live demo](https://img.shields.io/badge/LIVE-LIVE_URL-22c55e?style=flat-square)](LIVE_URL)
 
-> A statistical machine-learning engine that bridges **Codeforces** and **LeetCode** by
-> projecting problems into a unified geometric space using **Latent Semantic Analysis (LSA)**
-> and **Spectral Graph Theory**, then recommending *slightly-easier* problems that reuse the
-> **exact same algorithmic logic**.
+> Try it live: **<https://spectralbridge.onrender.com>**
+
+A statistical machine-learning engine that bridges **Codeforces** and **LeetCode** by
+projecting problems into a unified geometric space using **Latent Semantic Analysis (LSA)**
+and **Spectral Graph Theory**, then recommending *slightly-easier* problems that reuse the
+**exact same algorithmic logic**.
 
 Paste a problem you're stuck on → get 3 "bridge" problems 100–300 rating points easier that
 train the same concept. Built as a portfolio-grade, full-stack, hostable application.

@@ -1,0 +1,124 @@
+# =============================================================================
+# SpectralBridge .gitignore
+# =============================================================================
+
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+.eggs/
+build/
+dist/
+develop-eggs/
+sdist/
+wheels/
+share/python-wheels/
+.installed.cfg
+MANIFEST
+.python-version
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Testing / linting caches
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.cache
+.mypy_cache/
+.dmypy.json
+.ruff_cache/
+.pyre/
+.pytype/
+coverage.xml
+*.cover
+
+# ---------------------------------------------------------------------------
+# Node / Frontend
+# ---------------------------------------------------------------------------
+node_modules/
+frontend/dist/
+frontend/dist-ssr/
+*.local
+
+# Vite / build artifacts
+*.tsbuildinfo
+.vite/
+.next/
+.nuxt/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ---------------------------------------------------------------------------
+# Environment & secrets  (NEVER commit these)
+# ---------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.crt
+secrets/
+
+# ---------------------------------------------------------------------------
+# Databases (transient / local copies)
+# ---------------------------------------------------------------------------
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# ---------------------------------------------------------------------------
+# OS generated files
+# ---------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# ---------------------------------------------------------------------------
+# IDEs & editors
+# ---------------------------------------------------------------------------
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.history/
+*.sublime-project
+*.sublime-workspace
+
+# ---------------------------------------------------------------------------
+# Misc project junk
+# ---------------------------------------------------------------------------
+*.bak
+*.tmp
+*.orig
+.cache/
+.temp/
+tmp/

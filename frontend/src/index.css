@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #0a0e14;
+  color: #e6edf3;
+  font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Honour users who prefer reduced motion (accessibility / UX skill rule). */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@layer components {
+  .panel {
+    @apply rounded-xl border border-line bg-canvas-panel/80 backdrop-blur-sm;
+  }
+  .panel-raised {
+    @apply rounded-xl border border-line bg-canvas-raised;
+  }
+
+  /* Accent text — solid green, never a purple gradient */
+  .accent-text {
+    @apply text-accent-bright;
+  }
+
+  .btn-primary {
+    @apply inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg px-5 py-2.5 font-semibold text-canvas-base
+           bg-accent transition-all duration-200
+           hover:bg-accent-bright hover:shadow-glow
+           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-canvas-base
+           active:translate-y-px disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-accent;
+  }
+  .btn-ghost {
+    @apply inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg border border-line bg-transparent px-4 py-2.5 font-medium text-ink-muted transition-all duration-200
+           hover:border-accent/40 hover:text-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/60;
+  }
+
+  /* Small monospace metadata chip */
+  .meta {
+    @apply font-mono text-[11px] tracking-tight;
+  }
+  .tag-chip {
+    @apply inline-flex items-center rounded-md border border-line bg-canvas-inset px-2 py-0.5 font-mono text-[11px] text-ink-muted transition-colors hover:border-accent/30 hover:text-ink;
+  }
+}
+
+/* Keyboard focus visibility everywhere */
+:focus-visible {
+  outline: 2px solid #22c55e;
+  outline-offset: 2px;
+}
+
+/* Custom scrollbar (green-tinted) */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0e14;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(34, 197, 94, 0.22);
+  border-radius: 999px;
+  border: 2px solid #0a0e14;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(34, 197, 94, 0.4);
+}
+
+/* selection */
+::selection {
+  background: rgba(34, 197, 94, 0.28);
+  color: #e6edf3;
+}

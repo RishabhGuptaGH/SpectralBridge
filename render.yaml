@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: spectralbridge
+    runtime: docker
+    dockerContext: .
+    dockerfilePath: ./backend/Dockerfile
+    plan: free
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: SPECTRALBRIDGE_CORS
+        value: "*"
+      - key: PYTHON_VERSION
+        value: "3.12.10"

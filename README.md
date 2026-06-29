@@ -21,14 +21,14 @@ train the same concept. Built as a portfolio-grade, full-stack, hostable applica
 
 ---
 
-## 🖼️ Screenshots
+## Screenshots
 
 > Add `assets/hero.png`, `assets/results.png`, and an `assets/demo.gif` of the live app,
 > then uncomment the block above. Visuals are what make a CV repo stand out.
 
 ---
 
-## ✨ What it does
+## What it does
 
 Given a Codeforces or LeetCode URL, SpectralBridge:
 
@@ -48,7 +48,7 @@ Example — `https://codeforces.com/contest/580/problem/C` (Kefa and Park, DFS +
 
 ---
 
-## 🧠 The ML pipeline
+## The ML pipeline
 
 | Phase | Technique | Library |
 | --- | --- | --- |
@@ -73,7 +73,7 @@ problem (whenever both exist), while still preferring easier, high-similarity ma
 
 ---
 
-## 🛡️ Engineering reality checks (and how they're solved)
+## Engineering reality checks (and how they're solved)
 
 These are the hard problems that come up when you actually build this — and exactly the kind of
 thing worth discussing in an interview.
@@ -115,7 +115,7 @@ LeetCode's GraphQL endpoint is aggressive against scrapers; a cold start could g
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 .
@@ -150,7 +150,7 @@ LeetCode's GraphQL endpoint is aggressive against scrapers; a cold start could g
 
 ---
 
-## 🚀 Run locally
+## Run locally
 
 ### Prerequisites
 - **Python 3.10+** (tested on 3.12) — `python --version`
@@ -251,7 +251,7 @@ pytest -q
 
 ---
 
-## ☁️ Deploy
+## Deploy
 
 ### One file → Render
 `render.yaml` defines a single Docker web service. Push to GitHub, create a new site on Render
@@ -266,7 +266,7 @@ docker run -p 8000:8000 spectralbridge      # open http://localhost:8000
 
 ---
 
-## 🔌 API reference
+## API reference
 
 | Method | Path | Description |
 | --- | --- | --- |
@@ -286,7 +286,7 @@ curl -X POST http://localhost:8001/api/recommend \
 
 ---
 
-## 🧰 Tech stack
+## Tech stack
 
 **Backend:** FastAPI · scikit-learn (TF-IDF, TruncatedSVD) · scipy.sparse (Graph Laplacian,
 eigsh) · NumPy · SQLite · httpx
@@ -295,7 +295,7 @@ eigsh) · NumPy · SQLite · httpx
 
 ---
 
-## 📐 Rating normalization
+## Rating normalization
 
 LeetCode exposes only Easy/Medium/Hard, so they're mapped to a numeric scale *before* the
 project's shift `R_unified = R_lc − 400`; Codeforces ratings are the reference scale

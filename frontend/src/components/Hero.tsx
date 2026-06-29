@@ -37,7 +37,7 @@ export default function Hero({ onSubmit, loading, onExample }: HeroProps) {
       <p className="mx-auto mt-5 max-w-2xl text-pretty text-base text-ink-muted md:text-lg">
         SpectralBridge maps any Codeforces or LeetCode problem into a unified vector space and
         returns <span className="text-ink">3 slightly-easier problems</span> built on the exact
-        same algorithmic logic &mdash; one from each platform, guaranteed.
+        same algorithmic logic &mdash; across both platforms.
       </p>
 
       {/* Command-line style input */}

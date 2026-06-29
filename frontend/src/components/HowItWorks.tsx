@@ -20,7 +20,7 @@ const PIPELINE = [
   {
     n: "04",
     title: "Fusion + bridge",
-    body: "Semantic + structural vectors concatenate (L2-normalized), ranked by cosine, filtered 100–300 pts easier — one per platform.",
+    body: "Semantic + structural vectors concatenate (L2-normalized), ranked by cosine, filtered 100–300 pts easier.",
     math: "target − 300 ≤ R ≤ target − 100",
   },
 ];

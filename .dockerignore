@@ -1,0 +1,30 @@
+# Build artifacts (regenerated inside Docker, never needed in build context)
+node_modules/
+**/node_modules/
+frontend/dist/
+**/dist/
+
+# Python venvs & caches (regenerated inside Docker)
+.venv/
+venv/
+**/__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local dev files
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Git
+.git/
+.gitignore
